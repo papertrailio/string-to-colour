@@ -1,4 +1,4 @@
-<?php namespace Papertrailio\StringToColour;
+<?php namespace Papertrailio\StringToColour\Contracts;
 
 interface Colour
 {

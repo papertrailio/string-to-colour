@@ -1,5 +1,7 @@
 <?php namespace Papertrailio\StringToColour;
 
+use Papertrailio\StringToColour\Contracts\Colour;
+
 class HSL implements Colour
 {
     /**

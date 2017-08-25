@@ -1,6 +1,7 @@
-<?php namespace Papertrailio\StringToColour;
+<?php namespace Papertrailio\StringToColour\Types;
 
 use Papertrailio\StringToColour\Contracts\Colour;
+use Papertrailio\StringToColour\Generator;
 
 class HSL implements Colour
 {
@@ -18,7 +19,7 @@ class HSL implements Colour
      * @param $saturation
      * @param $lightness
      */
-    public function __construct($saturation, $lightness)
+    public function __construct($saturation = 76, $lightness = 63)
     {
         $this->saturation = $saturation;
         $this->lightness = $lightness;
@@ -32,9 +33,9 @@ class HSL implements Colour
         $hash = (new Generator)->getHash($string);
 
         return [
-            'h' => $hash % 360,
-            's' => $this->saturation,
-            'l' => $this->lightness,
+            'hue' => $hash % 360,
+            'saturation' => $this->saturation,
+            'lightness' => $this->lightness,
         ];
     }
 }

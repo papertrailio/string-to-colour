@@ -1,6 +1,6 @@
 <?php namespace Tests;
 
-use Papertrailio\StringToColour\HSL;
+use Papertrailio\StringToColour\Types\HSL;
 use PHPUnit_Framework_TestCase;
 
 class HSLTest extends PHPUnit_Framework_TestCase
@@ -10,8 +10,9 @@ class HSLTest extends PHPUnit_Framework_TestCase
     {
         $hsl = (new HSL(76, 63))->generate('text');
 
-        $this->assertEquals(213, $hsl['h']);
-        $this->assertEquals(76, $hsl['s']);
-        $this->assertEquals(63, $hsl['l']);
+        $this->assertCount(3, $hsl);
+        $this->assertEquals(213, $hsl['hue']);
+        $this->assertEquals(76, $hsl['saturation']);
+        $this->assertEquals(63, $hsl['lightness']);
     }
 }

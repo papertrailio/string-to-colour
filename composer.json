@@ -1,5 +1,5 @@
 {
-    "name": "papertrailio/stringtocolour",
+    "name": "papertrailio/string-to-colour",
     "description": "Turn a plain string into a colour",
     "type": "library",
     "license": "MIT",

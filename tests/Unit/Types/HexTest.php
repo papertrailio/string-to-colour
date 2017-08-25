@@ -1,4 +1,4 @@
-<?php namespace Tests;
+<?php namespace Tests\Unit\Types;
 
 use Papertrailio\StringToColour\Types\Hex;
 use PHPUnit_Framework_TestCase;

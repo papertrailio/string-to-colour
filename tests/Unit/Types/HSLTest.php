@@ -1,4 +1,4 @@
-<?php namespace Tests;
+<?php namespace Tests\Unit\Types;
 
 use Papertrailio\StringToColour\Types\HSL;
 use PHPUnit_Framework_TestCase;
